@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario1</title>
+</head>
+<body>
+    <h1>Land of Boxes Orden Form</h1>
+    <form action="">
+    <table>
+    
+    <tr>
+        <td style="text-align: right;">Name:</td>
+        <td><input type="text" pattern="[a-zA-Z\s]*" autofocus></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: right;">Email:</td>
+        <td><input type="email" maxlength="30"></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: right;">Address:</td>
+        <td><textarea name="" id="" cols="30" rows="5">
+162 main road
+Rondebosch
+Cape Town
+            </textarea></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: right;">Post Code:</td>
+        <td><input type="text" pattern="[0-9]*" minlength="6" maxlength="8"></td>
+    </tr>
+
+    </table><br><br>
+
+    <table border="1">
+
+        <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Subtotal</th>
+        </tr>
+
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td><input type="text" pattern="[0-9]*" minlength="1" maxlength="3"></td>
+            <td>R5</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Stardard Box</td>
+            <td>LB200</td>
+            <td><input type="text" pattern="[0-9]*" minlength="1" maxlength="3"></td>
+            <td>R10</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>PremiumBox</td>
+            <td>LB300</td>
+            <td><input type="text" pattern="[0-9]*" minlength="1" maxlength="3"></td>
+            <td>R15</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Deluxe Box</td>
+            <td>LB400</td>
+            <td><input type="text" pattern="[0-9]*" minlength="1" maxlength="3"> </td>
+            <td>R20</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Super Deluxe Box</td>
+            <td>LB500</td>
+            <td><input type="text" pattern="[0-9]*" minlength="1" maxlength="3"></td>
+            <td>R30</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="5" style="text-align: right;">Total: <input type="text" pattern="R[0-9]*" maxlength="2" ></td>
+        </tr>
+
+    </table><br>
+
+    <table>
+    
+    <tr>
+        <th>Credits Card Details</th>
+    </tr>
+
+    <td>Card Type:</td>
+
+    <tr>
+        <td><input type="radio" name="" checked>Mastercard</td>
+        <td>Card Number:</td>
+        <td><input type="number"></td>
+    </tr> 
+    <tr>   
+        <td><input type="radio" name="">Visa</td>
+        <td>Expiry date:</td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>   
+        <td><input type="radio" name="">American Express</td>
+    </tr> 
+    <tr>  
+        <td><input type="radio" name="">Diners Club</td>
+    </tr>  
+
+    </table> <br><br>
+
+    <table>
+
+        <tr>
+            <th>Delivery Address:</th>
+            <td><Textarea cols="30" rows="5">
+162 main road
+Rondebosch
+Cape Town
+                </Textarea></td>
+            </tr>
+
+   </table><br><br> 
+
+    <input type="submit" value="Send order">    
+    <input type="reset" value="Clean form">
+
+
+</form>
+</body>
+</html>
